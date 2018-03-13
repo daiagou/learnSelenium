@@ -13,7 +13,7 @@ public class HelloWorld {
         WebDriver webDriver = new ChromeDriver();
         //访问百度
         webDriver.get("https://www.baidu.com");
-        webDriver.findElement(By.id("kw")).sendKeys("hello world");
+        webDriver.findElement(By.id("kw")).sendKeys("hello world");//找到搜索框，填写hello world
         //webDriver.quit(); //关闭打开的浏览器
     }
 }
