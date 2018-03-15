@@ -17,8 +17,9 @@ public class PropertySelector {
         WebDriver webDriver = new ChromeDriver();
         //访问百度
         webDriver.get("https://passport.baidu.com/v2/?reg");
+        //id为TANGRAM__PSP_3__userName的input元素
         webDriver.findElement(By.cssSelector("input[id='TANGRAM__PSP_3__userName']")).sendKeys("PropertySelector");
-        //或者
+        //或者 name为userName的input
         webDriver.findElement(By.cssSelector("input[name='userName']")).sendKeys("PropertySelector");
         //或者其他属性。。。
         //webDriver.quit(); //关闭打开的浏览器
